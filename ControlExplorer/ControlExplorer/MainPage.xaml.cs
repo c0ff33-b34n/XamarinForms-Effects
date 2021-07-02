@@ -35,5 +35,12 @@ namespace ControlExplorer
         {
 
         }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+
+            buttonClick.Effects.Add(new ButtonGradientEffect());
+        }
     }
 }
